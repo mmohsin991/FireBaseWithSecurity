@@ -14,6 +14,12 @@
 		4222BEAB1AD7EA710013AF49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4222BEAA1AD7EA710013AF49 /* Images.xcassets */; };
 		4222BEAE1AD7EA710013AF49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4222BEAC1AD7EA710013AF49 /* LaunchScreen.xib */; };
 		4222BEBA1AD7EA710013AF49 /* FireBaseWithSecurityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222BEB91AD7EA710013AF49 /* FireBaseWithSecurityTests.swift */; };
+		4222BEC41AD7ED1A0013AF49 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4222BEC31AD7ED1A0013AF49 /* libicucore.dylib */; };
+		4222BEC61AD7ED380013AF49 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4222BEC51AD7ED380013AF49 /* libc++.dylib */; };
+		4222BEC81AD7ED470013AF49 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4222BEC71AD7ED470013AF49 /* CFNetwork.framework */; };
+		4222BECA1AD7ED500013AF49 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4222BEC91AD7ED500013AF49 /* Security.framework */; };
+		4222BECC1AD7ED660013AF49 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4222BECB1AD7ED660013AF49 /* SystemConfiguration.framework */; };
+		4222BECE1AD7EDDF0013AF49 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4222BECD1AD7EDDF0013AF49 /* Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,13 @@
 		4222BEB31AD7EA710013AF49 /* FireBaseWithSecurityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireBaseWithSecurityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4222BEB81AD7EA710013AF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4222BEB91AD7EA710013AF49 /* FireBaseWithSecurityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseWithSecurityTests.swift; sourceTree = "<group>"; };
+		4222BEC31AD7ED1A0013AF49 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		4222BEC51AD7ED380013AF49 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		4222BEC71AD7ED470013AF49 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		4222BEC91AD7ED500013AF49 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		4222BECB1AD7ED660013AF49 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		4222BECD1AD7EDDF0013AF49 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		4222BECF1AD7EEA30013AF49 /* FireBaseWithSecurity-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FireBaseWithSecurity-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +58,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4222BECC1AD7ED660013AF49 /* SystemConfiguration.framework in Frameworks */,
+				4222BECE1AD7EDDF0013AF49 /* Firebase.framework in Frameworks */,
+				4222BECA1AD7ED500013AF49 /* Security.framework in Frameworks */,
+				4222BEC81AD7ED470013AF49 /* CFNetwork.framework in Frameworks */,
+				4222BEC61AD7ED380013AF49 /* libc++.dylib in Frameworks */,
+				4222BEC41AD7ED1A0013AF49 /* libicucore.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,12 @@
 		4222BE921AD7EA710013AF49 = {
 			isa = PBXGroup;
 			children = (
+				4222BECD1AD7EDDF0013AF49 /* Firebase.framework */,
+				4222BECB1AD7ED660013AF49 /* SystemConfiguration.framework */,
+				4222BEC91AD7ED500013AF49 /* Security.framework */,
+				4222BEC71AD7ED470013AF49 /* CFNetwork.framework */,
+				4222BEC51AD7ED380013AF49 /* libc++.dylib */,
+				4222BEC31AD7ED1A0013AF49 /* libicucore.dylib */,
 				4222BE9D1AD7EA710013AF49 /* FireBaseWithSecurity */,
 				4222BEB61AD7EA710013AF49 /* FireBaseWithSecurityTests */,
 				4222BE9C1AD7EA710013AF49 /* Products */,
@@ -86,6 +111,7 @@
 				4222BEAC1AD7EA710013AF49 /* LaunchScreen.xib */,
 				4222BEA21AD7EA710013AF49 /* FireBaseWithSecurity.xcdatamodeld */,
 				4222BE9E1AD7EA710013AF49 /* Supporting Files */,
+				4222BECF1AD7EEA30013AF49 /* FireBaseWithSecurity-Bridging-Header.h */,
 			);
 			path = FireBaseWithSecurity;
 			sourceTree = "<group>";
@@ -340,9 +366,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FireBaseWithSecurity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FireBaseWithSecurity/FireBaseWithSecurity-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +384,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FireBaseWithSecurity/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FireBaseWithSecurity/FireBaseWithSecurity-Bridging-Header.h";
 			};
 			name = Release;
 		};
